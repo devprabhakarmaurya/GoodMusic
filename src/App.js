@@ -72,7 +72,7 @@ export default function App() {
     <div className="App">
       <header>
         <h1>
-          Welcome to GoodMusic<span>🎶</span>
+          Welcome to GoodMusic
         </h1>
         <p>Tells You The Best in Genre</p>
       </header>
