@@ -1,0 +1,123 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+}
+:root {
+  --primary-color: #f50057;
+}
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+.responsive-image {
+  width: 200px;
+  height: auto;
+}
+.genre-section {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.genre-buttons {
+  margin-top: 1rem;
+}
+
+.genre-button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.genre-button:hover {
+  background-color: #555;
+}
+.songs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.song-list {
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 0;
+}
+.song-list-item {
+  border: 0.15rem solid black;
+  border-radius: 1rem;
+  /* width: 500px; */
+  padding: 1rem;
+  margin: 1rem;
+}
+.song-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.song-rating {
+  margin: 2px 0px;
+  font-size: 1.2rem;
+}
+.footer {
+  background-color: var(--primary-color);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* media query */
+@media (max-width: 600px) {
+  .responsive-image {
+    width: 80%; /* Adjust width for mobile */
+    margin: 2rem auto; /* Center the image */
+  }
+
+  .genre-section {
+    padding: 1rem 0;
+  }
+
+  .genre-button {
+    padding: 0.3rem 0.7rem; /* Adjust button padding for mobile */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+
+  .songs {
+    flex-direction: column; /* Stack songs vertically */
+  }
+
+  .song-list-item {
+    width: 80%; /* Adjust width for mobile */
+    margin: 1rem auto; /* Center the song items */
+  }
+}
